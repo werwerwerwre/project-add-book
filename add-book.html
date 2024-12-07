@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Додати книгу</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Назад</a>
+        <span>Додати книгу</span>
+    </div>
+
+    <form id="add-book-form">
+        <label for="book-title">Назва книги:</label>
+        <input type="text" id="book-title" required>
+
+        <label for="book-author">Автор:</label>
+        <input type="text" id="book-author" required>
+
+        <label for="book-content">Контент книги (мінімум 100 символів):</label>
+        <textarea id="book-content" required></textarea>
+
+        <label for="book-cover">Обкладинка:</label>
+        <input type="file" id="book-cover">
+
+        <button type="submit">Додати книгу</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
